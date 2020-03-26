@@ -18,12 +18,12 @@ Oidc.Log.logger = console;
 Oidc.Log.level = Oidc.Log.INFO;
 
 var settings = {
-    authority: 'http://localhost:15000/oidc',
-    client_id: 'js.tokenmanager',
+    authority: 'https://saimdev.b2clogin.com/saimdev.onmicrosoft.com/b2c_1_signin/v2.0',
+    client_id: '14c8e394-83d8-4558-b553-9325524241f2',
     redirect_uri: 'http://localhost:15000/oidc-client-sample.html',
     post_logout_redirect_uri: 'http://localhost:15000/oidc-client-sample.html',
-    response_type: 'id_token token',
-    scope: 'openid email roles',
+    response_type: 'id_token',
+    scope: 'openid',
 
     filterProtocolClaims: true,
     loadUserInfo: true
